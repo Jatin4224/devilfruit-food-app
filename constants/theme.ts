@@ -11,7 +11,7 @@ export const Colors = {
 
 export const Fonts = {
   brand: "Nunito",
-  brandBold: "Nunito_700Bold",
+  brandBold: "CinzelDecorative_200Bold",
   brandJapanisBold: "CinzelDecorative_700Bold",
   brandBlack: "Nunito_900Black",
 };

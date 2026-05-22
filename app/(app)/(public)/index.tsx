@@ -3,6 +3,7 @@ import GoogleAuthButton from "@/app/components/auth/GoogleAuthButton";
 import SmoothInfiniteScroll from "@/app/components/SmoothInfiniteScroll";
 import { Fonts } from "@/constants/theme";
 import { LinearGradient } from "expo-linear-gradient";
+import { Link } from "expo-router";
 import {
   Image,
   ImageBackground,
@@ -73,20 +74,19 @@ export default function Index() {
         {/* Login buttn */}
         <View style={styles.buttonContainer}>
           <Animated.View entering={FadeInDown.delay(100)}>
-            {/* google sign in */}
             <GoogleAuthButton />
           </Animated.View>
 
           <Animated.View entering={FadeInDown.delay(200)}>
-            {/* apple sign in */}
             <AppleAuthButton />
           </Animated.View>
 
           <Animated.View entering={FadeInDown.delay(300)}>
-            {/* other button*/}
-            <TouchableOpacity style={styles.otherButton}>
-              <Text style={styles.otherButtonText}>Other Options</Text>
-            </TouchableOpacity>
+            <Link href={"/(app)/(public)/other-options"} asChild>
+              <TouchableOpacity style={styles.otherButton}>
+                <Text style={styles.otherButtonText}>Other Options</Text>
+              </TouchableOpacity>
+            </Link>
           </Animated.View>
         </View>
       </View>
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "600",
   },
-  infiniteScrollContainer: {cd
+  infiniteScrollContainer: {
     flex: 0.8,
     flexDirection: "row",
     justifyContent: "center",
