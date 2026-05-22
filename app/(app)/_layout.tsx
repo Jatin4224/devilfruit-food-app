@@ -1,0 +1,22 @@
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { Stack } from "expo-router";
+
+const RootNav = () => {
+  return (
+    <Stack>
+      <Stack.Screen
+        name="(auth)"
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+      <Stack.Screen
+        name="(public)"
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+    </Stack>
+  );
+};
+
+export default RootNav;
+
+const styles = StyleSheet.create({});
