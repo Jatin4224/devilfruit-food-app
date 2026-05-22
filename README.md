@@ -29,8 +29,8 @@ The goal of this assignment is to practice major React Navigation patterns in on
 
 ---
 
-### My Work
+## My Work
 
 ## Demo Video
 
-<video src="./assets/demo-food.mp4" controls width="300"></video>
+<video controls src="file:///E:/jatin/Downloads/demo-food.mp4" title="./assets/demo-food.mp4"></video>
