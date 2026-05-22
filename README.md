@@ -1,50 +1,36 @@
-# Welcome to your Expo app 👋
+# Food Delivery App UI — React Native Navigation Assignment
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Assignment Task
 
-## Get started
+Build a Food Delivery App UI in React Native using Expo.
 
-1. Install dependencies
+The goal of this assignment is to practice major React Navigation patterns in one complete app. The main focus is navigation structure, nested navigators, params, auth flow, deep linking, and smooth screen movement.
 
-   ```bash
-   npm install
-   ```
+### Requirements
 
-2. Start the app
+- Expo React Native project setup
+- Onboarding screen with a Get Started button
+- Stack Navigator flow: Onboarding → Home → Restaurant Detail → Cart
+- Pass restaurant name and price from Home to Restaurant Detail using params
+- Custom stack header with title, back label, and header color
+- Bottom Tab Navigator with Home, Search, Orders, and Profile
+- Vector icons for all tabs
+- Badge on Orders tab when cart is not empty
+- Restaurant Stack nested inside Home tab
+- Hide bottom tab bar on Restaurant Detail and Cart screens
+- Drawer Navigator accessible from Profile
+- Drawer items: My Orders, Settings, Help, Logout
+- Custom drawer content with user avatar and name
+- Conditional auth flow
+- Persist mock auth state after app reload
+- Screen transition animations
+- Programmatic navigation using navigate, goBack, replace, and reset
+- Deep link support: `foodapp://restaurant/123`
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+### My Work
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Demo Video
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<video src="./assets/demo-food.mp4" controls width="300"></video>
