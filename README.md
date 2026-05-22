@@ -33,4 +33,4 @@ The goal of this assignment is to practice major React Navigation patterns in on
 
 ## Demo Video
 
-<video controls src="file:///E:/jatin/Downloads/demo-food.mp4" title="./assets/demo-food.mp4"></video>
+![Devil Fruit Demo](./assets/demo.gif)
